@@ -1,0 +1,448 @@
+body,
+html {
+  font-family: "Signika Negative", sans-serif;
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+}
+
+.ai {
+  font-size: 10px;
+}
+
+.shapes {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  bottom: -5px;
+  z-index: 1;
+  padding-bottom: 30px;
+}
+
+.shape {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.shape img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.container {
+  display: none;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container p {
+  padding: 10px;
+  text-align: center;
+}
+
+
+.logo {
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: -40px auto;
+}
+
+.video-container {
+  margin: -50px auto 0;
+}
+
+.video-container iframe {
+  padding-bottom: 10px;
+}
+
+.travel-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.flags1 {
+  width: 25%;
+  height: auto;
+  position: relative;
+  right: -4%;
+  padding-top: 100px;
+}
+
+.flags2 {
+  width: 25%;
+  height: auto;
+  position: relative;
+  left: -4%;
+  padding-top: 100px;
+}
+
+.scroll-down {
+  width: 450px;
+  height: 50px;
+  background-color: #f44d4e;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-down p {
+  margin: 0;
+}
+
+.image-map {
+  width: 400px;
+  height: 600px;
+}
+
+
+.container {
+  font-size: 1.2rem;
+}
+
+.ph-map {
+  width: 80%;
+  /* Adjust the width as needed */
+  margin: 0 auto;
+  position: relative;
+}
+
+.ph-map img {
+  width: 100%;
+  display: block;
+}
+
+.button {
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.luzon-button {
+  top: 12%;
+  left: 60%;
+}
+
+.visayas-button {
+  top: 40%;
+  left: 5%;
+}
+
+.mindinao-button {
+  top: 60%;
+  left: 80%;
+}
+
+.button p {
+  margin: 0;
+}
+
+.luzon-popup {
+  display: none;
+  width: 36%;
+  font-size: 10px;
+  position: absolute;
+  top: 145%;
+  right: 5.5%;
+  text-align: left;
+}
+
+.visayas-popup {
+  width: 30%;
+  font-size: 10px;
+  position: absolute;
+  top: 160%;
+  left: 5%;
+  text-align: right;
+}
+
+.mindinao-popup {
+  display: none;
+  width: 25%;
+  font-size: 10px;
+  position: absolute;
+  top: 170%;
+  left: 73%;
+  text-align: left;
+}
+
+.sources-popup {
+  display: flex;
+  justify-content: center;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sources-websites p {
+  width: 100%;
+  font-size: 12px;
+}
+
+.sources-websites h4 {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Media query for desktop */
+@media screen and (min-width: 1024px) {
+  .shapes {
+    bottom: -20px;
+  }
+
+  .logo {
+    width: 30%;
+    margin: -60px auto;
+  }
+
+  .video-container {
+    margin: -20px auto 0;
+  }
+
+  .intro-text {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .flags1 {
+    width: 35%;
+    height: auto;
+    position: relative;
+    right: -3%;
+    padding-top: 100px;
+  }
+
+  .flags2 {
+    width: 35%;
+    height: auto;
+    position: relative;
+    left: -1%;
+    padding-top: 100px;
+
+  }
+
+  .logo-container {
+    padding-bottom: 30px;
+  }
+
+  .luzon-button {
+    top: 20%;
+    left: 55%;
+    font-size: 25px;
+  }
+
+  .visayas-button {
+    top: 60%;
+    left: 5%;
+    font-size: 25px;
+  }
+
+  .mindinao-button {
+    top: 70%;
+    left: 80%;
+    font-size: 25px;
+  }
+
+  .ph-map {
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .ph-map img {
+    width: 100%;
+    display: block;
+  }
+
+  .luzon-popup {
+    width: 35%;
+    font-size: 16px;
+    position: absolute;
+    top: 155%;
+    right: 5.5%;
+  }
+
+  .visayas-popup {
+    width: 27%;
+    font-size: 16px;
+    position: absolute;
+    top: 185%;
+    left: 5%;
+    text-align: right;
+  }
+
+  .mindinao-popup {
+    width: 25%;
+    font-size: 16px;
+    position: absolute;
+    top: 190%;
+    left: 72%;
+  }
+
+  .flourish-chart {
+    width: 50%;
+    height: 60px;
+  }
+
+  .flourish-chart-container {
+    display: flex;
+    justify-content: center;
+
+  }
+
+}
+
+
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .shapes {
+    bottom: -20px;
+  }
+
+  .logo {
+    width: 40%;
+    margin: -30px auto;
+
+  }
+
+  .flags1 {
+    width: 30%;
+    height: auto;
+    position: relative;
+    right: -3%;
+    padding-top: 100px;
+  }
+
+  .flags2 {
+    width: 30%;
+    height: auto;
+    position: relative;
+    left: -4%;
+    padding-top: 100px;
+
+  }
+
+  .logo-container {
+    padding-bottom: 30px;
+  }
+
+  .ph-map {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .ph-map img {
+    width: 100%;
+    display: block;
+  }
+
+  .luzon-button {
+    top: 20%;
+    left: 55%;
+    font-size: 20px;
+  }
+
+  .visayas-button {
+    top: 45%;
+    left: 15%;
+    font-size: 20px;
+  }
+
+  .mindinao-button {
+    top: 70%;
+    left: 80%;
+    font-size: 20px;
+  }
+
+  .luzon-popup {
+    width: 35%;
+    font-size: 15px;
+    position: absolute;
+    top: 140%;
+    left: 65%;
+  }
+
+  .visayas-popup {
+    width: 30%;
+    font-size: 15px;
+    position: absolute;
+    top: 155%;
+    left: 2%;
+    text-align: right;
+  }
+
+  .mindinao-popup {
+    display: none;
+    width: 20%;
+    font-size: 15px;
+    position: absolute;
+    top: 170%;
+    left: 80%;
+  }
+}
